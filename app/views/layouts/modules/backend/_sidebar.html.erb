@@ -1,0 +1,24 @@
+<%
+    def is_active(url)
+        if url == request.path
+            return "active"
+        else
+            return ""
+        end
+    end
+%>
+
+<div id="sidebar">
+    <ul class="side-navigation">
+        <a href="" class="<%= is_active("/backend/dashboard")%>">
+            <li>
+                <i class="fas fa-home"></i> Home
+            </li>
+        </a>
+        <a href="<%= is_active("/backend/settings")%>">
+            <li>
+                <i class="fas fa-cogs"></i> Settings
+            </li>
+        </a>
+    </ul>
+</div>

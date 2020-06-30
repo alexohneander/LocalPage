@@ -1,0 +1,20 @@
+// Place all the styles related to the Backend controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+#backend{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f6fa;
+
+    .header{
+        padding: 25px;
+        background-color: white;
+        .user-area{
+            float: right;
+        }
+    }
+}

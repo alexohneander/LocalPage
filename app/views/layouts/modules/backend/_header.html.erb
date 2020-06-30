@@ -1,0 +1,12 @@
+<div class="header">
+    <div class="logo-container">
+        Local Store
+    </div>
+
+    <% if user_signed_in? %>
+        <div class="user-area">
+            <a><%= current_user.email %></a>
+            <a href="/users/sign_out" data-method="delete" rel="nofollow">Logout</a>
+        </div>
+    <% end %>
+</div>
